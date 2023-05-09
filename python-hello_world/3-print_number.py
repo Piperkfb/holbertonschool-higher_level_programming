@@ -1,3 +1,3 @@
 #!/usr/bin/python3
-number
+number = 98
 f"{number} Battery street"
