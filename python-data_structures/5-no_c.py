@@ -1,13 +1,11 @@
 #!/usr/bin/python3
 def no_c(my_string):
 
-    noc = my_string.copy()
-
-    leng = len(noc)
+    leng = len(my_string)
 
     for i in range(leng):
         
-        if noc[i] == "c" or noc[i] == "C":
-            noc[i] = ""
+        if my_string[i] == "c" or my_string[i] == "C":
+            my_string[i] = ""
 
-    return (noc)
+    return (my_string)
