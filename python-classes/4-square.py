@@ -7,11 +7,12 @@ class Square(object):
     def __init__(self, size=0):
         """initialize size"""
         self.__size =size
+
     @property
     def size(self):
         """property"""
         return self.__size
-    
+
     @size.setter
     def size(self, value):
         """class variable size"""
