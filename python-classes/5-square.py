@@ -22,11 +22,11 @@ class Square(object):
             raise ValueError("size must be >= 0")
          self.__size = value
 
-                                                                                            def area(self):
+    def area(self):
         """Define area"""
         return self.__size * self.__size
 
-                                                                                            def my_print(self):
+    def my_print(self):
         """Print #"""
         if self.__size > 0:
             for i in range(self.__size):
