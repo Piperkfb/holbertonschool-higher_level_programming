@@ -34,4 +34,4 @@ class Square(object):
                     print("#", end="")
                 print("")
         else:
-             print("")
+            print("")
