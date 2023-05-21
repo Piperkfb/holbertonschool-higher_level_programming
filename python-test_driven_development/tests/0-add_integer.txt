@@ -44,21 +44,21 @@ b is 98 by default, so passing a second argument is not required
 
 --------a is None--------
 >>> add_integer(None, 20)
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
->>> add_integer()
-Traceback (most recent call last)
+>>> add_integer(None)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 --------b is None--------
 >>> add_integer(43, None)
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: b must be an integer
 
 --------a and b is None-------
 >>> add_integer(None, None)
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 ===Wrong formats===
@@ -67,15 +67,15 @@ TypeError: a must be an integer
 
 --------String Argument--------
 >>> add_integer("hello", 24)
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 >>> add_integer(23, "wuzzup")
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: b must be an integer
 
 >>> add_integer("doing", "good")
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: a must be an integer
 
 ===END===
