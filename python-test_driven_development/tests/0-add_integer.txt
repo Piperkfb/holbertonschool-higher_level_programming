@@ -1,0 +1,3 @@
+#only int and floats
+#no string, no equation, no more than 1 number,
+#must do int,int int,float floati,int`
