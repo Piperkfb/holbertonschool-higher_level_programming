@@ -61,6 +61,20 @@ TypeError: b must be an integer
 Traceback (most recent call last):
 TypeError: a must be an integer
 
+-------a is missing------
+>>> add_integer(, 30)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
+-------b is missing------
+>>> add_integer(23, )
+121
+
+------a and b are missing------
+>>> add_integer(, )
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
 ===Wrong formats===
 
 #strings
