@@ -10,7 +10,7 @@ def matrix_divided(matrix, div):
 
     if rowlen == 0 or collen == 0:
         raise TypeError("matrix must be a matrix (list of lists) of "
-                    "integers/floats")
+                        "integers/floats")
 
     if div == 0:
         raise ZeroDivisionError("division by zero")
@@ -25,6 +25,6 @@ def matrix_divided(matrix, div):
         for element in row:
             if type(element) != int and float:
                 raise TypeError("matrix must be a matrix (list of lists) of "
-                            "integers/floats")
+                                "integers/floats")
 
     return [[round(element/div, 2) for element in row] for row in matrix]
