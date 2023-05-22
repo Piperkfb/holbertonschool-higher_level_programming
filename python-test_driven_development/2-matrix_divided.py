@@ -14,11 +14,10 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    if type(div) != int and float:
+    if type(div) != int and type(div) != float:
         raise TypeError("div must be a number")
 
-    for row in matrix:
-        if len(row) != collen:
+    if not all(len(row) == len(matrix[0]) for row in matrix):
             raise TypeError("Each row of the matrix must have the same size")
 
     for row in matrix:
