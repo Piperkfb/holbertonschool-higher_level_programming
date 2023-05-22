@@ -1,0 +1,26 @@
+#Print a square
+#Must be >= 0
+#must be int
+
+intention - print a size by size square with "#"
+
+Function - print_square(size):
+
+>>> print_square = __import__('4-print_square').print_square
+
+=====Successful Functions=====
+
+--------Basic--------
+
+--------Zero--------
+
+--------One--------
+
+=====Errors=====
+
+--------Negative--------
+
+--------Not an int---------
+
+
+===END===
