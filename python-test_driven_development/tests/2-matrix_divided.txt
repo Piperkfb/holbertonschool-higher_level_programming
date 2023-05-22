@@ -66,7 +66,7 @@ TypeError: Each row of the matrix must have the same size
 
 >>> matrix = [
 ...     [5, 63, "holberton"],
-...     [6, 3, 56, 42, 54]
+...     [6, 3, 56]
 ... ]
 >>> print(matrix_divided(matrix, 7.8))
 Traceback (most recent call last):
@@ -79,7 +79,7 @@ TypeError: matrix must be a matrix (list of lists) of integers/floats
 ...	[4, 5, 6]
 ... ]
 >>> print(matrix_divided(matrix, "wuzzup"))
-Traceback (most recent call last)
+Traceback (most recent call last):
 TypeError: div must be a number
 
 ------Missing one argument
