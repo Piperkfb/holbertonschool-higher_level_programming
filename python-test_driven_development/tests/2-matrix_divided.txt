@@ -1,0 +1,30 @@
+Intention - Write a function that divides all elements of a mtrix
+
+#matrix must be integers or floats
+	typeerror 
+#each row of matrixs must be same sized
+	typeerror
+#div must be integeror flolat
+	typeerror
+#div can't be 0
+	zerodividionerror
+
+#All elements must be divided by div, rounded to 2 decimalplaces
+
+#Returns a new matrix
+
+Function - matrix_divided(matrix, div):
+
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+	>>> matrix = [
+	...	[3, 29, 80],
+	...	[20, 13, 5]
+	... ]
+
+=====Successful Functions=====
+
+-------
+
+=====Errors=====
+
+
