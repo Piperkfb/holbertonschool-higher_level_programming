@@ -3,6 +3,7 @@
 
 
 def say_my_name(first_name, last_name=""):
+    """Print first and last"""
 
     #must be a string first and last
     if type(first_name) != str:
