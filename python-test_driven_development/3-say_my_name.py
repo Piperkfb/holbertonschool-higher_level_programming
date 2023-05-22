@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""print a first and last name: """
+"""Print a first and last name: """
 
 
 def say_my_name(first_name, last_name=""):
