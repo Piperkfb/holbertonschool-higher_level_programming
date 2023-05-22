@@ -14,7 +14,7 @@ My name is Walter White
 --------No Last name--------
 
 >>> say_my_name("Walt")
-My name is Walt
+My name is Walt 
 
 =====Errors=====
 
@@ -33,7 +33,7 @@ TypeError: last_name must be a string
 --------Missing First argument---------
 
 >>> say_my_name(, "Mike")
-Traceback (most recent call last)
-TypeError: first_name must be a string
+Traceback (most recent call last):
+SyntaxError invalid syntax
 
 ===END===
