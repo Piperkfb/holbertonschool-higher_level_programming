@@ -58,6 +58,6 @@ class Rectangle(object):
             rect += "\n" + x
         return rect
 
-    def __repr__(self)
-    """String rep of rec"""
-    return "Rectangle({}, {})".format(str(self.width), str(self.height))
+    def __repr__(self):
+        """String rep of rec"""
+        return "Rectangle({}, {})".format(str(self.width), str(self.height))
