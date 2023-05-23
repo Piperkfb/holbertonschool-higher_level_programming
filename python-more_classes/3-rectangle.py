@@ -36,7 +36,7 @@ class Rectangle(object):
         if value < 0:
             raise ValueError("height must be >= 0")
         self.__height = value
-    
+
     def area(self):
         """Define area"""
         return self.__width * self.__height
@@ -45,7 +45,7 @@ class Rectangle(object):
         """define perimeter"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        return ((2 * self.__width) + (2* self.__height))
+        return ((2 * self.__width) + (2 * self.__height))
 
     def __str__(self):
         """ String reresentation of square """
