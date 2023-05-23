@@ -50,7 +50,7 @@ class Rectangle(object):
     def __str__(self):
         """ String reresentation of square """
         string = ""
-        if self.__height == 0 or self._width == 0:
+        if self.__height == 0 or self.__width == 0:
             return ""
         wide = "#" * self.width
         for i in range(self.height - 1):
