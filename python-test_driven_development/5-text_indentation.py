@@ -5,10 +5,9 @@ def text_indentation(text):
     """As seen on TV """
 
     if type(text) != str:
-        raiseTypeError
+        raise TypeError("text must be a string")
 
     sen = ""
-
     i = 0
     while i < len(text):
         if text[i] != "." and text[i] != "?" and text[i] != ":":
@@ -16,7 +15,7 @@ def text_indentation(text):
         else:
             sen += text [i]
             print(sen)
-            print("")
+            print()
             sen = ""
             while i < (len(text) - 1) and text[i+1] == "":
                 i += 1
