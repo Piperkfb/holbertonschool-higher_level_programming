@@ -13,11 +13,11 @@ def text_indentation(text):
         if text[i] != "." and text[i] != "?" and text[i] != ":":
             sen += text[i]
         else:
-            sen += text [i]
+            sen += text[i]
             print(sen)
             print()
             sen = ""
-            while i < (len(text) - 1) and text[i+1] == "":
+            while i < (len(text) - 1) and text[i+1] == " ":
                 i += 1
         i += 1
     print(sen, end="")
