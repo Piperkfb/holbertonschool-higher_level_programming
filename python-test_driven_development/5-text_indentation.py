@@ -9,6 +9,7 @@ def text_indentation(text):
 
     sen = ""
 
+    i = 0
     while i < len(text):
         if text[i] != "." and text[i] != "?" and text[i] != ":":
             sen += text[i]
