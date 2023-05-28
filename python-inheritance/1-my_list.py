@@ -2,7 +2,7 @@
 """A child is born"""
 
 
-class Mylist(list):
+class MyList(list):
     """It will inherit and print."""
 
     def print_sorted(self):
