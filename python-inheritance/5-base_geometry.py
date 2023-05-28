@@ -2,6 +2,6 @@
 """You think I'm not documenting?"""
 
 
-class BaseGeometry(self):
+class BaseGeometry(object):
     """Empty Students"""
     pass
