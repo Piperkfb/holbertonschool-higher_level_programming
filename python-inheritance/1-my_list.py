@@ -3,7 +3,7 @@
 
 
 class Mylist(list):
-    """It will inherit"""
+    """It will inherit and print"""
 
     def print_sorted(self):
         """As says"""
