@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Empty Class"""
+"""You think I'm not documenting?"""
 
 
 class BaseGeometry(self):
