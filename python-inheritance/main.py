@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-BaseGeometry = __import__('7-base_geometry').BaseGeometry
+Rectangle = __import__('9-rectangle').Rectangle
 
-bg = BaseGeometry()
+r = Rectangle(3, 5)
 
-bg.integer_validator("age", (4,))
+print(r)
+print(r.area())
+
