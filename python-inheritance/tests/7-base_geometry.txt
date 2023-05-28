@@ -4,6 +4,7 @@ Function - integer_validator(self, name, value)
 
 >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
 >>> bg = BaseGeometry()
+
 =========Successful Functions=========
 
 >>> bg.integer_validator("my_int", 12)
