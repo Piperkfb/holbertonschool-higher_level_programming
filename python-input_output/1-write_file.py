@@ -4,5 +4,5 @@
 
 def write_file(filename="", text=""):
     """Whacha wanna say?"""
-    with open(filename, mode="w", encoding="utf-8" as Filez:
+    with open(filename, mode="w", encoding="utf-8") as Filez:
         return Filez.write(text)
