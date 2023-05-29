@@ -14,10 +14,10 @@ class Student(object):
 
     def to_json(self, attrs=None):
         """Jason? PResent!"""
-        if attrs = None:
+        if attrs is None:
             return self.__dict__
         dictionary = {}
         for key, value in self.__dict__.items():
             if key in attrs:
-                dictionary[key[ = value
-        return dicionary
+                dictionary[key] = value
+        return dictionary
