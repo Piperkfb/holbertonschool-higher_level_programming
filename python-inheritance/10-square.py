@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A rectangle is a square but a square is not a rectangle"""
+"""a square is a rectangle"""
 
 
 Rectangle = __import__('9-rectangle').Rectangle
