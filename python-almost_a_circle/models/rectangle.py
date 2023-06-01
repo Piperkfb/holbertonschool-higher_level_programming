@@ -100,15 +100,15 @@ class Rectangle(Base):
     def display(self):
         """Shows visual representation of rectangle"""
 
-            for p in range(self.y):
+        for p in range(self.y):
                 print("")
 
-            for i in range(self.height):
-                for k in range(self.x):
-                    print(" ", end="")
-                for j in range(self.width):
-                    print("#", end="")
-                print("")
+        for i in range(self.height):
+            for k in range(self.x):
+                print(" ", end="")
+            for j in range(self.width):
+                print("#", end="")
+            print("")
 
     def __str__(self):
         """Displays attributes in a nice way"""
