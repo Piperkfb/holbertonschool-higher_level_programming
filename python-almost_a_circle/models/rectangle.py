@@ -74,7 +74,7 @@ class Rectangle(Base):
     def x(self, x):
         """Setter for X"""
         if type(x) != int:
-            raise TypeError("x must be must be an integer")
+            raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
