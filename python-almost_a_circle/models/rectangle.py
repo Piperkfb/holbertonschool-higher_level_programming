@@ -102,6 +102,7 @@ class Rectangle(Base):
 
             for p in range(self.y):
                 print("")
+
             for i in range(self.height):
                 for k in range(self.x):
                     print(" ", end="")
