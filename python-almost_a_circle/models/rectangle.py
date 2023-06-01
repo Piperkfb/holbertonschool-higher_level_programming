@@ -12,4 +12,6 @@ class Rectangle(Base):
         """whut"""
         self.width = width
         self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
