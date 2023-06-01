@@ -98,6 +98,7 @@ class Rectangle(Base):
         return self.width * self.height
 
     def display(self):
+        """Shows visual representation of rectangle"""
         for i in range(self.height):
             for j in range(self.width):
                 print("#", end="")
