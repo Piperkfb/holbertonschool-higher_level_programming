@@ -4,6 +4,7 @@
 
 from models.rectangle import Rectangle
 
+
 class Square(Rectangle):
     """Welcome to square class. no B*tches"""
 
@@ -24,5 +25,5 @@ class Square(Rectangle):
 
     def __str__(self):
         """Display the Square"""
-        return ('[Square] ({}) {}/{} - {}'.format(self.id, self.x, 
-                                                        self.y, self.width))
+        return ('[Square] ({}) {}/{} - {}'.format(self.id, self.x,
+                                                    self.y, self.width))
