@@ -24,4 +24,3 @@ class Base(object):
             return "[]"
         return json.dumps(list_dictionaries)
 
-    @classmethod
