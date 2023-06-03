@@ -62,5 +62,6 @@ class Square(Rectangle):
                     self.y = j
 
     def is_dictionary(self):
+        """What be the Square"""
         return {"id": self.id, "size": self.size,
                 "x": self.x, "y": self.y}
