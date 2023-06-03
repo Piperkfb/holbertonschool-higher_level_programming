@@ -118,11 +118,16 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         """Update the values"""
-        if args != 0:
+        if args and args != 0:
             a = 0
             for arg in args:
                 if a == 0:
-                    self.id = arg
+                    if arg is None:
+                        super().__init__(self.width,
+                                        self.height, self.x,
+                                        self.y)
+                    else:
+                        self.id = arg
                 elif a == 1:
                     self.width = arg
                 elif a == 2:
@@ -135,7 +140,11 @@ class Rectangle(Base):
         elif kwargs and len(kwargs) != 0:
             for i, j in kwargs.items():
                 if i == "id":
-                    self.id = j
+                    if i is None:
+                        super().__init__(self.width, self.height,
+                                        self.x, self.y)
+                    else:
+                        self.id = j
                 elif i == "width":
                     self.width = j
                 elif i == "height":
