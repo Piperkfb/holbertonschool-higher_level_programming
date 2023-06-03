@@ -51,3 +51,9 @@ class Square(Rectangle):
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
+
+    def __str__(self):
+        """Display the Square"""
+        return ('[Square] ({}) {}/{} - {}/{}'.format(self.id, self.x, 
+                                                        self.y, self.size,
+                                                        self.size))
