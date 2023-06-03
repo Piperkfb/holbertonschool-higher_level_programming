@@ -153,3 +153,9 @@ class Rectangle(Base):
                     self.x = j
                 elif i == "y":
                     self.y = j
+
+    def to_dictionary(self):
+        """What be the values"""
+        return {"id": self.id, "height": self.height,
+                "width": self.width, "x": self.x
+                "y": self.y}
