@@ -19,10 +19,10 @@ class Base(object):
             self.id = Base.__nb_objects
 
     @staticmethod
-    def to_json_string(list_dict):
+    def to_json_string(list_dictionaries):
         """Return Json list"""
-        if list_dixt is None or len(list_dict) == 0:
+        if list_dictionaries is None or len(list_dictionaries) == 0:
             return "[]"
-        return json.dumps(list_dict)
+        return json.dumps(list_dictionaries)
 
     @classmethod
