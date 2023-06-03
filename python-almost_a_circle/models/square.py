@@ -60,3 +60,5 @@ class Square(Rectangle):
                     self.x = j
                 elif i == "y":
                     self.y = j
+
+    def is_dictionary(self):
