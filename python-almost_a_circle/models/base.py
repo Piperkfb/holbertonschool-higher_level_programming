@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """The base of the circle??"""
 import json
-import os import path
 
 
 class Base(object):
