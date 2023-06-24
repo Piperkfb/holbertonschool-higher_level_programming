@@ -1,2 +1,2 @@
---show databses
+-- show databses
 SHOW DATABASES;
