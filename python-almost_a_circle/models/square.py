@@ -27,6 +27,7 @@ class Square(Rectangle):
         """Display the Square"""
         return ('[Square] ({}) {}/{} - {}'.format(self.id, self.x,
                                                   self.y, self.width))
+
     def update(self, *args, **kwargs):
         """Update what you want"""
         if args and args != 0:
@@ -35,8 +36,8 @@ class Square(Rectangle):
                 if a == 0:
                     if arg is None:
                         super().__init__(self.width,
-                                            self.height, self.x,
-                                            self.y)
+                                         self.height, self.x,
+                                         self.y)
                     else:
                         self.id = arg
                 elif a == 1:
@@ -51,7 +52,7 @@ class Square(Rectangle):
                 if i == "id":
                     if i is None:
                         super().__init__(self.width, self.height,
-                                            self.x, self.y)
+                                         self.x, self.y)
                     else:
                         self.id = j
                 elif i == "size":

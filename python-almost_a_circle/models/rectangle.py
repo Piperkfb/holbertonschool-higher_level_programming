@@ -101,7 +101,7 @@ class Rectangle(Base):
         """Shows visual representation of rectangle"""
 
         for p in range(self.y):
-                print("")
+            print("")
 
         for i in range(self.height):
             for k in range(self.x):
@@ -124,8 +124,8 @@ class Rectangle(Base):
                 if a == 0:
                     if arg is None:
                         super().__init__(self.width,
-                                        self.height, self.x,
-                                        self.y)
+                                         self.height, self.x,
+                                         self.y)
                     else:
                         self.id = arg
                 elif a == 1:
@@ -142,7 +142,7 @@ class Rectangle(Base):
                 if i == "id":
                     if i is None:
                         super().__init__(self.width, self.height,
-                                        self.x, self.y)
+                                         self.x, self.y)
                     else:
                         self.id = j
                 elif i == "width":
