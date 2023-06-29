@@ -1,0 +1,39 @@
+intention- function that prints"My name is first_name last_name
+
+function- say_my_name(first_name, last_name="")
+
+>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+=====Successful Functions=====
+
+--------Standard---------
+
+>>> say_my_name("Walter", "White")
+My name is Walter White
+
+--------No Last name--------
+
+>>> say_my_name("Walt")
+My name is Walt 
+
+=====Errors=====
+
+--------First not a string----------
+
+>>> say_my_name(39, "Miku")
+Traceback (most recent call last):
+TypeError: first_name must be a string
+
+--------Last not a string-----------
+
+>>> say_my_name("Hatsune", 39)
+Traceback (most recent call last):
+TypeError: last_name must be a string
+
+--------Missing arguments---------
+
+>>> say_my_name()
+Traceback (most recent call last):
+TypeError: say_my_name() missing 1 required positional argument: 'first_name'
+
+===END===

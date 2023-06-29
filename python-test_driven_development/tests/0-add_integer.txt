@@ -1,0 +1,111 @@
+#only int and floats
+#no string, no more than 1 number,
+#must do int,int int,float floati,int
+#inclulde negative numbers
+
+The function - add_integer(a, b=98)
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+=====Successful Functions=====
+
+--------Basic addition--------
+
+>>> add_integer(25, 35)
+60
+
+--------Float numbers---------
+
+>>> add_integer(5.8, 10.2)
+15
+
+--------Negative numbers---------
+
+>>> add_integer(10, -11)
+-1
+
+>>> add_integer(20, -10)
+10
+
+--------Combo types----------
+
+>>> add_integer(10.3, -20)
+-10
+
+>>> add_integer(5, 10.7)
+15
+
+=======Errors========
+
+There should be no lacking arguments
+b is 98 by default, so passing a second argument is not required
+
+#if a is none, if b is none, if no areguments,
+
+--------a is None--------
+>>> add_integer(None, 20)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+--------b is None--------
+>>> add_integer(43, None)
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+--------a and b is None-------
+>>> add_integer(None, None)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+-------a is missing------
+>>> add_integer(, 30)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
+-------b is missing------
+>>> add_integer(23, )
+121
+
+------a and b are missing------
+>>> add_integer(, )
+Traceback (most recent call last):
+SyntaxError: invalid syntax
+
+===Wrong formats===
+
+#strings
+
+--------String Argument--------
+>>> add_integer("hello", 24)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+>>> add_integer(23, "wuzzup")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+>>> add_integer("doing", "good")
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+-------Float overflow------
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+>>> add_integer(-float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
+-------Float NaN to int-------
+
+>>> add_integer(float('NaN'))
+Traceback (most recent call last):
+ValueError: cannot convert float NaN to integer
+
+
+===END===
