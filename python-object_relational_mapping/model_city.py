@@ -1,6 +1,5 @@
 #!/usr/bin/python3
-"""Definition of a State and an instance Base
-"""
+"""Definition of a State and an instance Base"""
 from sqlalchemy import Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Table, Column, Integer, ForeignKey
@@ -10,11 +9,7 @@ Base = declarative_base()
 
 
 class City(Base):
-    """Inherits from Base
-
-    Args:
-        Base (class): inherits from Base
-    """
+    """Inherits from BasBase"""
     __tablename__ = 'cities'
     id = Column(Integer, primary_key=True, nullable=False,
                 unique=True, autoincrement=True)
