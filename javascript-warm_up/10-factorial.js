@@ -2,8 +2,8 @@
 
 function factor (a) {
   if (a === 0 || a === 1) { return 1; }
-  return a * factor (a - 1);
-  }
+  return a * factor(a - 1);
+}
 
 const arg = process.argv[2];
 const num = Number(arg);
