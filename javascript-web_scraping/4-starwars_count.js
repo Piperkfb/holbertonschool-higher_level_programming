@@ -1,20 +1,25 @@
 #!/usr/bin/node
 
-const url = process.argv[2];
 const request = require('request');
 
-request.get(url, function(err, data, body) {
-    if (err) throw err;
-    Jason = JSON.parse(body).results;
-    let movNum = 0;
+request(process.argv[2], function (err, _res, body) {
+  if (err) {
+    console.log(err);
+  } else {
+    const completedTasksByUsers = {};
+    body = JSON.parse(body);
 
-    for (const movie in Jason) {
-        const charList = Jason[movie].characters
-        for (const char in charList) {
-            if (charList[char].includes('/18/')) {
-                movNum++;
-            }
-        }
+    for (let i = 0; i < body.length; ++i) {
+      const userId = body[i].userId;
+      const completed = body[i].completed;
+
+      if (completed && !completedTasksByUsers[userId]) {
+        completedTasksByUsers[userId] = 0;
+      }
+
+      if (completed) ++completedTasksByUsers[userId];
     }
-    console.log(movNum);
-})
+
+    console.log(completedTasksByUsers);
+  }
+});
