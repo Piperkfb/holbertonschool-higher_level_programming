@@ -8,8 +8,7 @@ request.get(url, function(err, data, body) {
     if (err) {
         throw err;
     } else {
-      const jsonData = JSON.parse(body);
-      const name = jsonData.name;
-      console.log(name);
+      const jsonData = JSON.parse(body).title
+      console.log(jsonData);
     }
 });
