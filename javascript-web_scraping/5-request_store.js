@@ -5,10 +5,9 @@ const path = process.argv[3];
 const fs = require('fs');
 const request = require('request');
 
-request.get(url, 'utf8', function(err, data, body) {
+request.get(url, function(err, data) {
     if (err) throw err;
-    const Jason = JSON.parse(body);
-    fs.writeFile(path, Jason, function(err2) {
+    fs.writeFile(path, data, 'utf8', function(err2) {
         if (err2) throw err2;
     });
 });
